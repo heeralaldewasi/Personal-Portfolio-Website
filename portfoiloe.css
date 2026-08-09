@@ -256,6 +256,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+.html:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
 }
 .html-icon{
 height:40px;
@@ -268,6 +277,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+.html:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
 }
 .css-icon{
 height:40px;
@@ -283,6 +301,15 @@ justify-content: center;
 flex-direction: column;
 overflow: hidden;
 padding-top: 5px;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+.js:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
 }
 .js-icon{
 height:58px;
@@ -297,8 +324,16 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
 }
-
+.react:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+}
 .react-icon{
 height:40px
 }
@@ -311,8 +346,16 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
 }
-
+.html5Canvas:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+}
 .html5Canvas-icon{
 height:50px
 }
@@ -325,6 +368,15 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+cursor: pointer;
+transition: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+.ResponsiveDesion:hover{
+transform: translateZ(-5px);
+box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
 }
 .ResponsiveDesion-icon{
 height:30px;
@@ -337,7 +389,9 @@ height:30px;
   margin-top: 12px;
   margin-left: 60px;
   margin-right: 60px;
-  gap:8px
+  gap:8px;
+  flex-wrap: wrap;
+  perspective: 800px;
 }
 .skills-items{
 border-bottom: 3px solid rgb(37, 99, 235);
@@ -390,23 +444,22 @@ padding-bottom: 4px;
 
 
 /* fgfgfghghfhjggfhgfhd */
-
-
-
 .Streramnest{
 height:240;
 border:1px solid rgb(229, 231, 235);
 width: 280px;
 display: flex;
 flex-direction: column;
-overflow: hidden;
+overflow: scroll;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+transition: box-shadow transfrom;
+transition-duration: 0.4s;
+transition-timing-function: ease;
 }
 .Streramnest:hover{
-box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-transform: translateY(-5px);
+box-shadow: 0px 4px 10px  rgba(0, 0, 0, 0.3);
+transform: translateZ(-10px);
 }
 .Streramnest-icon{
 height: 120px;
@@ -420,21 +473,23 @@ border:1px solid rgb(229, 231, 235);
 width: 280px;
 display: flex;
 flex-direction: column;
-overflow: hidden;
+overflow: scroll;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+transition: box-shadow transfrom;
+transition-duration: 0.4s;
+transition-timing-function: ease;
 }
 
 .youtube:hover{
-box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-transform: translateY(-5px);
-}
+box-shadow: 0px 4px 10px  rgba(0, 0, 0, 0.3);
+transform: translateZ(-10px);
 
+}
 .youtube-icon{
 height: 120px;
 width: 100%;
-object-fit: cover;
+object-fit: fill;
 }
 .calculaterProject{
 height:240;
@@ -444,13 +499,16 @@ display: flex;
 flex-direction: column;
 overflow: hidden;
 border-radius: 8px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+transition: box-shadow transfrom;
+transition-duration: 0.4s;
+transition-timing-function: ease;
 
 }
 .calculaterProject:hover{
-box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-transform: translateY(-5px);
+box-shadow: 0px 4px 10px  rgba(0, 0, 0, 0.3);
+transform: translateZ(-10px);
+
 }
 .calculaterProject-icon{
 height: 120px;
@@ -468,6 +526,8 @@ margin-right: 60px;
   flex-wrap: nowrap;
   gap: 20px;
 justify-content: space-between;
+flex-wrap: wrap;
+perspective: 800px;
 }
 .skills-items{
 border-bottom: 3px solid rgb(37, 99, 235);
